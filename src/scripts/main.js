@@ -1,12 +1,15 @@
 'use strict';
 
-const galleryList = document.querySelector('.gallery__list');
-const bigImage = document.querySelector('#largeImg');
-const title = document.querySelector('.heading');
+const galleryList = document.querySelector('.gallery_list');
+const bigImage = document.querySelector('.gallery_large-img');
+const title = document.querySelector('header > h1');
+
+title.textContent = "Day and night"
+
 galleryList.addEventListener('click', (event) => {
   event.preventDefault();
-  bigImage.src = event.target.closest('.list-item__link').href;
-  console.log(event.target.closest('.list-item__link').href);
-  console.log(event.target.closest('.list-item__link').title);
-  title.textContent = event.target.closest('.list-item__link').title;
+  bigImage.src = event.target.closest('.list-item_link').href;
+  console.log(event.target.closest('.list-item_link').href);
+  console.log(event.target.closest('.list-item_link').title);
+  title.textContent = event.target.closest('.list-item_link').title;
 });
