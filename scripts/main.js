@@ -2,7 +2,7 @@
 
 const galleryList = document.querySelector('.gallery_list');
 const bigImage = document.querySelector('.gallery_large-img');
-const title = document.querySelector('header > h1');
+const title = document.querySelector('figcaption');
 
 title.textContent = "Day and night"
 

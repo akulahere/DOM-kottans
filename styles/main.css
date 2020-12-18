@@ -8,9 +8,6 @@ body {
 main {
   display: flex;
   justify-content: space-between;
-  /*align-items: stretch;*/
-  /*max-width: 1024px;*/
-  /*max-height: 1024px;*/
 }
 
 nav {
@@ -20,6 +17,10 @@ nav {
   margin: 0;
 }
 figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 85%;
   height: 100%;
   margin: 0;
